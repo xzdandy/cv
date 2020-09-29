@@ -1,117 +1,122 @@
-\section{Work Experience}
+\section{Research Experience}
+
 \parbox[t][][t]{\linewidth}{
-	\parbox{\linewidth}{\textbf{Software Architect}
-		\hfill {{Sep. 2018 --- \phantom{Jun. 2020}}}}
+	%\parbox{\linewidth}{\textbf{Software Architect}
+	%	\hfill {{Sep. 2018 --- \phantom{Jun. 2020}}}}
+	%	\smallbreak
+	%\parbox{\linewidth}{Dolphin Interconnect Solutions}
+	%\smallbreak
+  \parbox{\linewidth}{\textbf{Reuse in visual database management system (VDBMS)}
+		\hfill {{Aug. 2020 --- Now}}}
 		\smallbreak
-	\parbox{\linewidth}{Dolphin Interconnect Solutions}
-	\smallbreak
-	\parbox{\linewidth}{\textbf{PhD Student}
-		\hfill {{Feb. 2015 --- \phantom{Jun. 2019}}}}
+	\parbox{\linewidth}{Database Research Group at Georgia Tech}
+  
+	\bigskip
+  \textbf{Ongoing research:} With the pervasive use of cameras, there arises an increasing number of video-based applications. Meanwhile, the derived data from the same video (e.g., bounding boxes) can be useful for multiple applications. We explore the intermediate results materialization and reuse opportunities across queries in a visual data management system (i.e., think MySQL for videos) called EVA.
+
+  \textbf{Github:} \url{https://github.com/georgia-tech-db/eva}.
+	\bigskip
+}
+
+
+\parbox[t][][t]{\linewidth}{
+	%\parbox{\linewidth}{\textbf{Software Architect}
+	%	\hfill {{Sep. 2018 --- \phantom{Jun. 2020}}}}
+	%	\smallbreak
+	%\parbox{\linewidth}{Dolphin Interconnect Solutions}
+	%\smallbreak
+	\parbox{\linewidth}{\textbf{Smart camera system at the Edge of the network}
+		\hfill {{Aug. 2018 --- Now}}}
 		\smallbreak
-	\parbox{\linewidth}{Simula Research Laboratory\\and University of Oslo}
+	\parbox{\linewidth}{Embedded and Pervasive Computing Lab, Gatech}
 	
 	\bigskip
-	Initially collaborated with, and then later working for Dolphin Interconnect Solutions.
-	Currently developing a framework for high-performance, distributed I/O, resource sharing,
-	and composable architectures in PCIe clusters.
-	Gained experience with PCIe, NTBs, high-speed interconnects, RDMA, distributed shared-memory
-	architectures, NVMe, GPU programming, Nvidia GPUDirect, driver development and low-level kernel hacking.
-%	Worked on a framework for distributed high-performance IO in a PCIe cluster in
-%	collaboration with Dolphin Interconnect Solutions. 
-%	Gained
-%	experience with PCIe, NTBs, high-speed interconnects, RDMA, memory
-%	architectures, NVMe, GPU programming, and driver development for Linux.
-
-	\bigskip
+  Due to the intensive network backhaul bandwidth requirements for a large-scale camera network, Edge computing is a better computational platform for smart camera systems.
+  In this work, we study the necessary components for a smart camera system at the Edge and proper architecture (i.e., the mapping between the components and hardware resources).
+  In particular, we use Space-Time Vehicle Tracking (STVT) as a concrete example, which aims to track \textit{all} vehicles \textit{all} the time.
+  Collaborating with campus police, we deployed our system with live campus camera streams. \\
+  \textbf{Github:} \url{https://github.gatech.edu/zxu330/PICamera} \\
+  \textbf{Publications:}
 	\begin{itemize}
-		\item{Implemented Linux KVM hypervisor support using VFIO mediated device drivers
-			for passing through physically remote devices to a local VM.}\\[-.6em]
-		\item{Contributed to the design, development and testing of the SmartIO
-			extension to the SISCI shared-memory API.}\\[-.6em]
-%		\item{Created a library for developing distributed storage
-%			applications using SmartIO extension to SISCI.
-%			As proof of concept, I used this library in a CUDA program to demonstrate direct
-%			IO between GPUs and NVMe disks a cluster without
-%			involving CPU in the data path.}\\[-.6em]
-		\item{Created a software library and userspace NVMe driver 
-			for developing distributed storage applications using SmartIO.
-			Demonstrated concurrent, zero-copy and direct block-level access to NVMe drives from
-			multiple GPUs in the cluster without involving CPU in the data path.}\\[-.6em]
-		\item{Investigated performance issue with Intel IOMMUs and
-			implemented support for PCIe peer-to-peer transfers for SmartIO devices.}\\[-.6em]
-		\item{Developed various RDMA performance benchmarking tools.}
+    \item{Demo of the system in US Ignite 2019: https://www.us-ignite.org/apps/space-time-tracking-of-vehicles-for-smart-camera-surveillance/}\\
+      [-1em]
+    \item{Xu, Z., Gupta, H., \& Ramachandran, U. (2018, June). Sttr: A system for tracking all vehicles all the time at the edge of the network. In Proceedings of the 12th ACM International Conference on Distributed and Event-based Systems (pp. 124-135).}\\
+      [-1em]
+    \item{Xu, Zhuangdi, et al. "Space-Time Vehicle Tracking at the Edge of the Network." Proceedings of the 2019 Workshop on Hot Topics in Video Analytics and Intelligent Edges. 2019.}\\
+      [-1em]
+    \item{Zhuangdi Xu, Harshil S Shah, and Umakishore Ramachandran. 2020.
+Coral-Pie: A Geo-Distributed Edge-compute Solution for Space-
+Time Vehicle Tracking. In 21st International Middleware Conference (Middleware ’20).}\\
+      [-1em]
 	\end{itemize}
 	\bigskip
+}
+
+
+
+\parbox[t][][t]{\linewidth}{
+	%\parbox{\linewidth}{\textbf{Software Architect}
+	%	\hfill {{Sep. 2018 --- \phantom{Jun. 2020}}}}
+	%	\smallbreak
+	%\parbox{\linewidth}{Dolphin Interconnect Solutions}
+	%\smallbreak
+	\parbox{\linewidth}{\textbf{Distributed key-value store for Edge computing}
+		\hfill {{Aug. 2017 --- June 2018}}}
+		\smallbreak
+	\parbox{\linewidth}{Embedded and Pervasive Computing Lab, Gatech}
+	
+	\bigskip
+   To carter the needs of smart services for the IoT (Internet of Things) age, we propose DataFog, a geo-distributed data-management platform at the edge of the network, which provides low latency data access by its locality-based data placement strategy, and handles data skewness by short-term and long-term load balancing policy.
+
+  \textbf{Publication:} Gupta, H., Xu, Z., \& Ramachandran, U. (2018). Datafog: Towards a holistic data management platform for the iot age at the network edge. In {USENIX} Workshop on Hot Topics in Edge Computing (HotEdge 18).
 	\bigskip
 }
 
 \parbox[t][][t]{\linewidth}{
-	\parbox{\linewidth}{\textbf{Software Developer}
-		\hfill {{Aug. 2014 --- Jan. 2015}}}
+	\parbox{\linewidth}{\textbf{SpaceFish --- a userlevel file system}
+		\hfill {{Jan. 2016 --- Aug. 2016}}}
 		\smallbreak
-	\parbox{\linewidth}{Bridge Technologies}
+	\parbox{\linewidth}{Institute for Information Security \& Privacy, Gatech}
 
 	\bigskip
-%	Worked at a company that made hardware and software
-%	for real-time analysis of IPTV and OTT digital video and network
-%	traffic. Got experience with video encoding, PIM-SM multicasting, MPEG transport
-%	streams, working with C++ in an embedded environment, and
-%	network traffic analysis.
 
-	Gained experience with analysing IPTV and OTT digital video, network traffic analysis,
-	PIM-SM multicasting, and working with embedded C++.
-%	Implemented an MPEG-4/AVC video stream parser in order to extract and
-%			validate CEA608/708 closed captioning data and provide real-time notifications.
+  SpaceFish provides a sandbox for all file operations at the user level. For the duration of a SpaceFish session, all operations related to files are executed on in-memory copies of the files, with the actual file system left intact.
 
-	\bigskip
-	\begin{itemize}
-		\item{Implemented a real-time MPEG transport stream parser for the VB288 content extractor using libpcap for live capturing
-			multicast IPTV video.}\\[-.6em]
-		\item{Implemented parser for MPEG-2 and MPEG-4/AVC video streams in order to extract and
-			validate CEA608/708 closed captioning data and provide real-time event notifications.}
-
-%		\item{Implemented a MPEG-2 and MPEG-4/AVC video stream parser for the
-%			VB288 content extractor using libpcap for live network
-%			traffic capturing.}\\[-.6em]
-%		\item{Made a validator for CEA608/708 closed captioning data
-%		embedded into MPEG-2 and MPEG-4 video streams with real-time
-%			error notifications.}
-	\end{itemize}
-	\bigskip
-	\bigskip
+  \textbf{Github}: \url{https://github.com/acham/spacefish}.
 }
+
 
 
 %%% Full time. Feb. 2013 -- Aug. 2014
 %%% Part time Mar 2011 -- Jun 2012
-\parbox[t][][t]{\linewidth}{
-	\parbox{\linewidth}{{\textbf{Software Development Engineer}}
-		\hfill {{Mar. 2011 --- Aug. 2014}}}
-		\smallbreak
+%\parbox[t][][t]{\linewidth}{
+%	\parbox{\linewidth}{{\textbf{Software Development Engineer}}
+%		\hfill {{Mar. 2011 --- Aug. 2014}}}
+%		\smallbreak
 
-	\parbox{\linewidth}{Fotoware}
+%	\parbox{\linewidth}{Fotoware}
 
-	\bigskip
-	Worked mainly with the back-end of FotoWeb, a web-based image and video
-	archiving system with full-text metadata search and workflows based on
-	metadata tags. Gained experience working with Apache2, MongoDB, web
-	caches, designing REST services from the ground up, and creating HTTP endpoints with C++ (FastCGI)
-	and Python (Flask / mod\_wsgi).
+%	\bigskip
+%	Worked mainly with the back-end of FotoWeb, a web-based image and video
+%	archiving system with full-text metadata search and workflows based on
+%	metadata tags. Gained experience working with Apache2, MongoDB, web
+%	caches, designing REST services from the ground up, and creating HTTP endpoints with C++ (FastCGI)
+%	and Python (Flask / mod\_wsgi).
 
-	\bigskip
-	\begin{itemize}
-		\item{Implemented a hierarchical metadata taxonomy tree that
-			supported CRUD operations and assignment to assets of tens of thousands of metadata tags within
-			milliseconds.}\\[-.6em]
-		\item{Created a configurable workflow engine allowing users to
-			create custom pipelines and workloads for processing assets based on
-			metadata tags.}\\[-.6em]
-		\item{Made a background job scheduler with support for
-			webhooks and asynchronous message-passing as well as
-			bulk file operations.}\\[-.6em]
-		\item{Implemented both back-end and front-end for exporting
-			assets to an external CMS and an access 
-			management UI for these exports.}\\[-.6em]
+%	\bigskip
+%	\begin{itemize}
+%		\item{Implemented a hierarchical metadata taxonomy tree that
+%			supported CRUD operations and assignment to assets of tens of thousands of metadata tags within
+%			milliseconds.}\\[-.6em]
+%		\item{Created a configurable workflow engine allowing users to
+%			create custom pipelines and workloads for processing assets based on
+%			metadata tags.}\\[-.6em]
+%		\item{Made a background job scheduler with support for
+%			webhooks and asynchronous message-passing as well as
+%			bulk file operations.}\\[-.6em]
+%		\item{Implemented both back-end and front-end for exporting
+%			assets to an external CMS and an access 
+%			management UI for these exports.}\\[-.6em]
 		%\item{Contributed to migrating the existing code base from IIS to Apache.}
-	\end{itemize}
-}
+%	\end{itemize}
+%}
